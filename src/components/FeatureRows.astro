@@ -1,0 +1,44 @@
+---
+import Phone from './Phone.astro';
+
+const rows = [
+  {
+    tag: 'Wave & wind',
+    title: 'See more than the tide.',
+    lead: 'Get detailed wave and wind forecasts in easy-to-scan chart, bar, and timetable views. Follow moon phases, moonrise, moonset, sunrise, and sunset too.',
+    image: '/images/waveforecast.png',
+    alt: 'Wave and wind forecast with bars and hourly table',
+    flip: false,
+  },
+  {
+    tag: 'Spots & map',
+    title: 'Explore spots across Bali.',
+    lead: 'Browse surf areas, compare spot conditions, and use the map to find the session that fits your day.',
+    image: '/images/map.png',
+    alt: 'Map of Bali surf spots',
+    flip: true,
+  },
+  {
+    tag: 'Settings',
+    title: 'Make it yours.',
+    lead: 'Use metres or feet, choose a theme, set your preferred tide range, and view longer-range forecasts with Pro.',
+    image: '/images/settings.png',
+    alt: 'Settings with themes, units and tide recommendation',
+    flip: false,
+  },
+];
+---
+<section class="sec paper">
+<div class="wrap rows">
+{rows.map((row) => (
+<div class:list={['row', row.flip && 'flip']}>
+<div class="copy">
+<p class="tag"><b></b>{row.tag}</p>
+<h2 class="h2">{row.title}</h2>
+<p class="lead">{row.lead}</p>
+</div>
+<div class="shot"><Phone src={row.image} alt={row.alt} width="clamp(230px,26vw,320px)" /></div>
+</div>
+))}
+</div>
+</section>

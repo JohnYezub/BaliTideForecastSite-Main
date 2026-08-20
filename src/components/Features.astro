@@ -1,0 +1,37 @@
+---
+const features = [
+  {
+    num: '01',
+    title: 'Your ocean, hour by hour',
+    body: 'An interactive tide chart with the current level, tide speed, upcoming high and low tides, and the exact time for every point in the day.',
+  },
+  {
+    num: '02',
+    title: 'Find your best window',
+    body: 'Choose a surf spot and see its recommended tide window, alongside wave height, period, energy, and wind conditions.',
+  },
+  {
+    num: '03',
+    title: 'Built for Bali days',
+    body: 'Surfing, swimming, walking the beach, or chasing sunset — switch between Surfing and Beach profiles for a more relevant view of the ocean.',
+  },
+  {
+    num: '04',
+    title: 'Share the call',
+    body: 'Send a clear tide and wave forecast image to friends before you head out.',
+  },
+];
+---
+<section class="sec" id="features">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">Key features</p>
+<h2 class="h2">Everything the ocean is doing today.</h2>
+</div>
+<div class="cards">
+{features.map((f) => (
+<article class="card"><p class="num">{f.num}</p><h3 class="h3">{f.title}</h3><p class="body">{f.body}</p></article>
+))}
+</div>
+</div>
+</section>

@@ -1,0 +1,14 @@
+{
+  "name": "bali-tide-forecast-site",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "astro": "^5.6.0"
+  }
+}

@@ -1,0 +1,15 @@
+---
+interface Props {
+  class?: string;
+  style?: string;
+}
+
+const { class: className = '', style } = Astro.props;
+
+const APP_STORE = 'https://apps.apple.com/id/app/bali-tide-forecast/id1525663618';
+const GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.balitideforecast';
+---
+<div class:list={['btns', className]} style={style}>
+<a class="btn btn-light" href={APP_STORE}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12"></path><path d="M6.5 12.5 12 18l5.5-5.5"></path><path d="M4 21h16"></path></svg><span><small>Download on the</small>App Store</span></a>
+<a class="btn btn-ghost" href={GOOGLE_PLAY}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12"></path><path d="M6.5 12.5 12 18l5.5-5.5"></path><path d="M4 21h16"></path></svg><span><small>Get it on</small>Google Play</span></a>
+</div>

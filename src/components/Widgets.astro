@@ -1,0 +1,35 @@
+---
+import Phone from './Phone.astro';
+
+const widgets = [
+  {
+    image: '/images/widget.png',
+    alt: 'Home Screen tide chart widget',
+    title: 'Home Screen',
+    body: 'A full tide curve with highs, lows and the current level — sized for the space you give it.',
+  },
+  {
+    image: '/images/lockscreen_widgets.jpeg',
+    alt: 'Lock Screen widgets showing tide, swell and wave energy',
+    title: 'Lock Screen-ready',
+    body: 'Keep your essential ocean data a glance away with Lock Screen widgets for current tide, next tide, swell, wave energy, and compact tide charts.',
+  },
+];
+---
+<section class="sec dark" id="widgets">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow on-dark">Widgets</p>
+<h2 class="h2">The forecast, without opening the app.</h2>
+<p class="lead on-dark">Add Bali Tide Forecast to your Home Screen for a live tide chart, current tide, next high or low tide, spot conditions, and wind-and-wave snapshots.</p>
+</div>
+<div class="wid-grid">
+{widgets.map((w) => (
+<div class="wid">
+<Phone src={w.image} alt={w.alt} width="clamp(230px,25vw,330px)" />
+<div class="copy"><h3 class="h3">{w.title}</h3><p class="body on-dark">{w.body}</p></div>
+</div>
+))}
+</div>
+</div>
+</section>

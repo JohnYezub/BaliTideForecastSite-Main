@@ -1,0 +1,13 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width: string;
+}
+
+const { src, alt, width } = Astro.props;
+---
+<div class="phone" style={`--pw:${width}`}>
+<img class="screen" src={src} alt={alt}>
+<img class="bezel" src="/images/iPhone-17-Pro-Cosmic-orange.svg" alt="">
+</div>

@@ -1,0 +1,40 @@
+---
+import Analytics from '@vercel/analytics/astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Bali Tide Forecast — Know Bali's tide before you go",
+  description = 'Tide, swell, wind and spot conditions for Bali in one beautifully simple forecast. iPhone, Apple Watch, widgets and Android.',
+} = Astro.props;
+
+// OG scrapers require absolute URLs, so resolve against `site` from astro.config.mjs.
+const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path);
+const canonical = abs(Astro.url.pathname);
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/images/app_icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content="Bali Tide Forecast" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={abs('/images/mainscreen.png')} />
+<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+<slot />
+<Analytics />
+</body>
+</html>
