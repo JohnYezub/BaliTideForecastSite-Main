@@ -122,3 +122,18 @@ section{position:relative}
 .foot-links{display:flex;flex-wrap:wrap;gap:22px;margin-left:auto}
 .foot a{color:rgba(255,255,255,.6);font-weight:600}
 .foot a:hover{color:#fff}
+
+/* ---- legal pages ---- */
+.legal-hero{background:var(--navy-900);color:#fff;padding:clamp(44px,6vw,80px) 0 clamp(32px,4vw,52px)}
+.legal-hero .in{display:grid;gap:14px;max-width:760px}
+.legal-hero .h1{font-size:clamp(32px,4.6vw,50px)}
+.legal-meta{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.legal{padding:clamp(44px,6vw,76px) 0 clamp(64px,8vw,110px)}
+.prose{max-width:760px;display:grid;gap:20px}
+.prose h2{font-size:clamp(20px,2.2vw,25px);margin-top:20px}
+.prose h2:first-child{margin-top:0}
+.prose p{font-size:16.5px;line-height:1.7;color:var(--ink-2)}
+.prose ul{margin:0;padding-left:22px;display:grid;gap:7px;font-size:16.5px;line-height:1.7;color:var(--ink-2)}
+.prose a{font-weight:600}
+.legal-effective{font-family:var(--mono);font-size:13px;color:var(--ocean);letter-spacing:.04em}
+.legal-credit{margin-top:16px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;line-height:1.6;color:var(--muted)}

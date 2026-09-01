@@ -1,0 +1,30 @@
+---
+import Base from './Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  heading: string;
+  description: string;
+  effective: string;
+}
+
+const { title, heading, description, effective } = Astro.props;
+---
+<Base title={title} description={description}>
+  <Nav />
+  <section class="legal-hero">
+    <div class="wrap in">
+      <p class="legal-meta">Bali Tide Forecast</p>
+      <h1 class="h1">{heading}</h1>
+      <p class="legal-meta">Effective as of {effective}</p>
+    </div>
+  </section>
+  <section class="legal">
+    <div class="wrap">
+      <div class="prose"><slot /></div>
+    </div>
+  </section>
+  <Footer />
+</Base>
