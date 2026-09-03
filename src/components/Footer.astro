@@ -1,5 +1,7 @@
 ---
+const FIRST_RELEASE = 2020;
 const year = new Date().getFullYear();
+const copyright = year > FIRST_RELEASE ? `${FIRST_RELEASE}–${year}` : `${FIRST_RELEASE}`;
 ---
 <footer class="foot">
 <div class="wrap foot-in">
@@ -12,6 +14,6 @@ const year = new Date().getFullYear();
 <a href="/privacy">Privacy Policy</a>
 <a href="/terms">Terms of Use</a>
 </div>
-<p style="width:100%;font-size:13px;opacity:.6">© {year} Bali Tide Forecast. Tide, swell and wind data for Bali.</p>
+<p style="width:100%;font-size:13px;opacity:.6">© {copyright} Bali Tide Forecast. Tide, swell and wind data for Bali.</p>
 </div>
 </footer>
