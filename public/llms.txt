@@ -1,0 +1,67 @@
+# Bali Tide Forecast
+
+> Bali Tide Forecast is a mobile app for iPhone, Android and Apple Watch that shows
+> tide, swell, wind and surf spot conditions for Bali, Indonesia. It covers 70 surf
+> spots and 29 beaches across the Bukit Peninsula, Kuta, Canggu, West Bali, East Bali,
+> North Bali and Nusa Lembongan. Forecasts update every 3 hours; 5 days ahead are free
+> and Pro extends this to 16 days. Free to download with optional monthly and yearly
+> subscriptions. First released in 2020. Rated 4.8 from 37 ratings on the App Store.
+
+## What the app does
+
+- Shows an interactive tide chart for the current day: water level right now, tide
+  speed, the upcoming high and low tides, and the exact time for every point in the day.
+- Gives each surf spot a recommended tide window, shown alongside wave height, period,
+  wave energy and wind conditions.
+- Offers separate Surfing and Beach profiles, so the same ocean data is presented
+  differently depending on whether you are surfing, swimming, walking the beach or
+  watching the sunset.
+- Presents wave and wind forecasts as charts, bars and timetables, and includes moon
+  phases, moonrise, moonset, sunrise and sunset.
+- Includes a map of surf spots across Bali for comparing conditions between areas.
+- Provides Home Screen and Lock Screen widgets for current tide, next high or low tide,
+  swell, wave energy and compact tide charts.
+- Has an Apple Watch app with today's tide graph, current water level, next tide, wave
+  height, period, energy and wind, plus complications for watch faces.
+- Can export a tide and wave forecast image to share.
+- Supports metres or feet, selectable themes, a configurable preferred tide range, and
+  longer-range forecasts on the paid plan.
+
+## Coverage
+
+- 70 surf spots and 29 beaches, grouped into 7 areas: Bukit Peninsula, Kuta, Canggu,
+  West Bali, East Bali, North Bali and Nusa Lembongan.
+- Named spots include Uluwatu, Padang Padang, Bingin, Impossibles, Racetracks, The Peak,
+  Balangan, Dreamland, Canggu, Batu Bolong, Echo Beach, Keramas, Medewi, Balian,
+  Shipwrecks and Lacerations.
+- Each spot has a break type (reef, beach, point, river mouth), a skill level, a best
+  season, a typical wave size range, and offshore and onshore wind directions.
+- Per-spot reference pages: https://balitideforecast.app/spots/
+
+## Forecast
+
+- Updated every 3 hours.
+- 5 days ahead free; 16 days with Pro.
+
+## Platforms and pricing
+
+- iPhone, Android, Apple Watch.
+- Free to download.
+- Optional paid subscription, billed monthly or yearly through the Apple App Store or
+  Google Play. Payment is handled by Apple or Google; the developer does not process
+  card details.
+
+## Links
+
+- [Home](https://balitideforecast.app/): product overview and screenshots.
+- [App Store](https://apps.apple.com/id/app/bali-tide-forecast/id1525663618): iPhone and Apple Watch download.
+- [Google Play](https://play.google.com/store/apps/details?id=com.balitideforecast): Android download.
+- [All spots](https://balitideforecast.app/spots/): every surf spot and beach covered, with break type, level, season and wind.
+- [Privacy Policy](https://balitideforecast.app/privacy): what data is collected and how it is handled.
+- [Terms & Conditions](https://balitideforecast.app/terms): licence, subscription and liability terms.
+
+## Notes
+
+- Forecasts are predictions, not guarantees. Ocean conditions can differ from any
+  forecast, and users are responsible for assessing conditions before entering the water.
+- Contact: balitideforecast@gmail.com

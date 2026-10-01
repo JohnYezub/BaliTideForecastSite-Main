@@ -1,20 +1,65 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import { getImage } from 'astro:assets';
+import appIcon from '../images/app_icon.png';
+import ogSource from '../images/og-image.jpg';
 import '../styles/global.css';
 
 interface Props {
   title?: string;
   description?: string;
+  /** Extra JSON-LD nodes merged into the site-wide @graph. */
+  schema?: Record<string, unknown>[];
 }
 
 const {
   title = "Bali Tide Forecast — Know Bali's tide before you go",
   description = 'Tide, swell, wind and spot conditions for Bali in one beautifully simple forecast. iPhone, Apple Watch, widgets and Android.',
+  schema = [],
 } = Astro.props;
 
 // OG scrapers require absolute URLs, so resolve against `site` from astro.config.mjs.
 const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path);
 const canonical = abs(Astro.url.pathname);
+
+// The 1024px source would otherwise ship 604 KB for a 32px favicon.
+const favicon = await getImage({ src: appIcon, width: 180, height: 180, format: 'png' });
+const appleTouchIcon = await getImage({ src: appIcon, width: 180, height: 180, format: 'png' });
+// Already authored at 1200x630. Re-encoded only to pick up a content hash, at high
+// quality so the headline text stays crisp. JPEG, not WebP: some link-preview
+// scrapers still do not decode WebP.
+const ogImage = await getImage({ src: ogSource, width: 1200, format: 'jpeg', quality: 92 });
+
+const SITE_NAME = 'Bali Tide Forecast';
+const APP_STORE = 'https://apps.apple.com/id/app/bali-tide-forecast/id1525663618';
+const GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.balitideforecast';
+const CONTACT_EMAIL = 'balitideforecast@gmail.com';
+
+const graph = [
+  {
+    '@type': 'Organization',
+    '@id': abs('/#organization'),
+    name: SITE_NAME,
+    url: abs('/'),
+    email: CONTACT_EMAIL,
+    logo: {
+      '@type': 'ImageObject',
+      url: abs(favicon.src),
+      width: 180,
+      height: 180,
+    },
+    sameAs: [APP_STORE, GOOGLE_PLAY],
+  },
+  {
+    '@type': 'WebSite',
+    '@id': abs('/#website'),
+    name: SITE_NAME,
+    url: abs('/'),
+    inLanguage: 'en',
+    publisher: { '@id': abs('/#organization') },
+  },
+  ...schema,
+];
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -24,14 +69,27 @@ const canonical = abs(Astro.url.pathname);
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
-<link rel="icon" href="/images/app_icon.png" />
+<link rel="icon" type="image/png" href={favicon.src} />
+<link rel="apple-touch-icon" href={appleTouchIcon.src} />
+<meta name="theme-color" content="#061826" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonical} />
-<meta property="og:site_name" content="Bali Tide Forecast" />
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:locale" content="en_US" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={abs('/images/mainscreen.png')} />
+<meta property="og:image" content={abs(ogImage.src)} />
+<meta property="og:image:width" content={String(ogImage.attributes.width ?? 1200)} />
+<meta property="og:image:height" content={String(ogImage.attributes.height ?? '')} />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={abs(ogImage.src)} />
+<script
+  type="application/ld+json"
+  is:inline
+  set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}
+/>
 </head>
 <body>
 <slot />

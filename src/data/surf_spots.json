@@ -1,0 +1,2630 @@
+{
+  "areas": [
+	{
+	  "name": "Bukit Peninsula",
+	  "spots": [
+		{
+		  "name": "Uluwatu",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.815139,
+		  "longitude": 115.086833,
+		  "onshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 180
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 1.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 6.0
+		  }
+		},
+		{
+		  "name": "The Bombie",
+		  "type": "reef",
+		  "level": "expert",
+		  "season": "dry",
+		  "latitude": -8.816898,
+		  "longitude": 115.083444,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 2.0,
+			"max": 8.0
+		  }
+		},
+		{
+		  "name": "Temples",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.819152,
+		  "longitude": 115.085389,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 1.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 5.0
+		  }
+		},
+		{
+		  "name": "Racetracks",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.813656,
+		  "longitude": 115.088646,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.8,
+			"max": 1.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 4.0
+		  }
+		},
+		{
+		  "name": "Outside Corner",
+		  "type": "reef",
+		  "level": "expert",
+		  "season": "dry",
+		  "latitude": -8.812218,
+		  "longitude": 115.087786,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.8,
+			"max": 1.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 2.0,
+			"max": 8.0
+		  }
+		},
+		{
+		  "name": "The Peak",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.815594,
+		  "longitude": 115.086243,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 5.0
+		  }
+		},
+		{
+		  "name": "Secret",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.822542,
+		  "longitude": 115.08427,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.0,
+			"max": 1.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Padang Padang",
+		  "type": "reef",
+		  "level": "expert",
+		  "season": "dry",
+		  "latitude": -8.809645,
+		  "longitude": 115.10076,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.8,
+			"max": 1.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.5,
+			"max": 4.0
+		  }
+		},
+		{
+		  "name": "Bingin",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.803927,
+		  "longitude": 115.113169,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.8,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Dreamland",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "dry",
+		  "latitude": -8.799532,
+		  "longitude": 115.115559,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 1.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Impossibles",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.807448,
+		  "longitude": 115.105715,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 4.0
+		  }
+		},
+		{
+		  "name": "Balangan",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.792297,
+		  "longitude": 115.120596,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 4.0
+		  }
+		},
+		{
+		  "name": "Honeymoon",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.7793,
+		  "longitude": 115.144813,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 345
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 165
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Nyang-Nyang",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.84,
+		  "longitude": 115.091407,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.5
+		  }
+		},
+		{
+		  "name": "Green Bowl",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.850408,
+		  "longitude": 115.171197,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Nunggalan",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "dry",
+		  "latitude": -8.84534,
+		  "longitude": 115.109356,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Pandawa",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.844529,
+		  "longitude": 115.194818,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Gunung Payung",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.84247,
+		  "longitude": 115.20206,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Niko",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.829561,
+		  "longitude": 115.221729,
+		  "onshoreWindRanges": [
+			{
+			  "start": 270,
+			  "end": 90
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 285,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 75
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Geger",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.82219,
+		  "longitude": 115.227084,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Mengiat",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.807209,
+		  "longitude": 115.235432,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Black stone",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.804819,
+		  "longitude": 115.237436,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.5
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Mushroom",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.800329,
+		  "longitude": 115.238367,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Kuta",
+	  "spots": [
+		{
+		  "name": "Jimbaran Beach",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.77954,
+		  "longitude": 115.16234,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Toro Toro",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.75632,
+		  "longitude": 115.1584,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Airport Rights",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.753621,
+		  "longitude": 115.15417,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Airport Lefts",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.739732,
+		  "longitude": 115.151049,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Airport Middle",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.733314,
+		  "longitude": 115.153281,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 1.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Kuta Reef",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.72978,
+		  "longitude": 115.15657,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Halfway",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.7156,
+		  "longitude": 115.16684,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.7,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Kuta Beach",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.71197,
+		  "longitude": 115.16596,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Padma",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.70655,
+		  "longitude": 115.16479,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Legian Beach",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.70381,
+		  "longitude": 115.16413,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Double six",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.69818,
+		  "longitude": 115.16084,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Kudeta",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.6886,
+		  "longitude": 115.15421,
+		  "onshoreWindRanges": [
+			{
+			  "start": 180,
+			  "end": 315
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 0,
+			  "end": 135
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.0,
+			"max": 1.2
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Canggu",
+	  "spots": [
+		{
+		  "name": "Berawa",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.66747,
+		  "longitude": 115.13862,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Nelayan",
+		  "type": "beach",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.66258,
+		  "longitude": 115.13215,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 1.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Canggu",
+		  "type": "reef",
+		  "level": "all",
+		  "season": "all",
+		  "latitude": -8.65647,
+		  "longitude": 115.12512,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Batu Bolong",
+		  "type": "beach & reef",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.66011,
+		  "longitude": 115.12982,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 1.6
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Oldmans",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "all",
+		  "latitude": -8.6581,
+		  "longitude": 115.12748,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 1.6
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Echo Beach",
+		  "type": "beach & reef",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.65561,
+		  "longitude": 115.12468,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Sand Bar",
+		  "type": "beach",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.65449,
+		  "longitude": 115.12373,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Rivermouth",
+		  "type": "river mouth",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.65337,
+		  "longitude": 115.12246,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Pererenan",
+		  "type": "beach",
+		  "level": "beginner",
+		  "season": "all",
+		  "latitude": -8.65263,
+		  "longitude": 115.12104,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Kedungu",
+		  "type": "beach",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.60938,
+		  "longitude": 115.08266,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 1.6
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Yeh Gannga",
+		  "type": "beach",
+		  "level": "intermediate",
+		  "season": "all",
+		  "latitude": -8.58934,
+		  "longitude": 115.06568,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "West Bali",
+	  "spots": [
+		{
+		  "name": "Balian",
+		  "type": "reef & river mouth",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.50452,
+		  "longitude": 114.96534,
+		  "onshoreWindRanges": [
+			{
+			  "start": 165,
+			  "end": 285
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 345,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 105
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 0.8,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Medewi",
+		  "type": "point",
+		  "level": "beginner",
+		  "season": "dry",
+		  "latitude": -8.41969,
+		  "longitude": 114.80459,
+		  "onshoreWindRanges": [
+			{
+			  "start": 135,
+			  "end": 270
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 315,
+			  "end": 360
+			},
+			{
+			  "start": 0,
+			  "end": 90
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "East Bali",
+	  "spots": [
+		{
+		  "name": "Nusa Dua",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.79672,
+		  "longitude": 115.23728,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Sri Lanka",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.78832,
+		  "longitude": 115.23263,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Serangan",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.741046,
+		  "longitude": 115.244228,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Baby reef",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.72192,
+		  "longitude": 115.25401,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.4
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Hyatt reef",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.71518,
+		  "longitude": 115.27124,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Tandjung Sari",
+		  "type": "point",
+		  "level": "intermediate",
+		  "season": "dry",
+		  "latitude": -8.57,
+		  "longitude": 115.45,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Sindhu",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.68617,
+		  "longitude": 115.26914,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Sanur",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.674,
+		  "longitude": 115.26744,
+		  "onshoreWindRanges": [
+			{
+			  "start": 15,
+			  "end": 165
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 195,
+			  "end": 345
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Rangkan",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.626952,
+		  "longitude": 115.302753,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Keramas",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.59863,
+		  "longitude": 115.33992,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.5
+		  }
+		},
+		{
+		  "name": "Cucukan",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.58995,
+		  "longitude": 115.35105,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Tumpeng",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.57733,
+		  "longitude": 115.40736,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Klotok",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.57805,
+		  "longitude": 115.39961,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Ketewel",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.64422,
+		  "longitude": 115.28395,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Jasri",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.48604,
+		  "longitude": 115.61676,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Ujung",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.47165,
+		  "longitude": 115.63158,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.5,
+			"max": 2.0
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Nusa Lembongan",
+	  "spots": [
+		{
+		  "name": "Shipwrecks",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.665715,
+		  "longitude": 115.442633,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.0,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.5
+		  }
+		},
+		{
+		  "name": "Razors",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.668681,
+		  "longitude": 115.442799,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.2,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.0,
+			"max": 3.0
+		  }
+		},
+		{
+		  "name": "Lacerations",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.672573,
+		  "longitude": 115.441442,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.2,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.5,
+			"max": 3.5
+		  }
+		},
+		{
+		  "name": "Playgrounds",
+		  "type": "reef",
+		  "level": "beginner",
+		  "season": "wet",
+		  "latitude": -8.677772,
+		  "longitude": 115.440263,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.2,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.5
+		  }
+		},
+		{
+		  "name": "Mushroom Bay",
+		  "type": "reef",
+		  "level": "intermediate",
+		  "season": "wet",
+		  "latitude": -8.680386,
+		  "longitude": 115.4336,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.2,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.5
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 0.5,
+			"max": 2.0
+		  }
+		},
+		{
+		  "name": "Ceningan Point",
+		  "type": "reef",
+		  "level": "advanced",
+		  "season": "wet",
+		  "latitude": -8.705623,
+		  "longitude": 115.438271,
+		  "onshoreWindRanges": [
+			{
+			  "start": 45,
+			  "end": 225
+			}
+		  ],
+		  "offshoreWindRanges": [
+			{
+			  "start": 225,
+			  "end": 45
+			}
+		  ],
+		  "perfectTideRange": {
+			"min": 1.2,
+			"max": 2.8
+		  },
+		  "goodTideRange": {
+			"min": 1.0,
+			"max": 1.4
+		  },
+		  "poorTideRange": {
+			"min": 0,
+			"max": 1.0
+		  },
+		  "waveRange": {
+			"min": 1.5,
+			"max": 3.5
+		  }
+		}
+	  ]
+	}
+  ]
+}

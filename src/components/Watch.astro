@@ -1,3 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import watch1 from '../images/apple_watch_1.png';
+import watch2 from '../images/apple_watch_2.png';
+---
 <section class="sec paper" id="watch">
 <div class="wrap watch-grid">
 <div class="copy" style="display:grid;gap:18px;max-width:460px">
@@ -7,8 +12,8 @@
 <p class="body">Swipe through the forecast, adjust units and the information you want to see, and stay in sync with your iPhone. Add watch complications and widgets to keep the next tide visible on your favourite watch face.</p>
 </div>
 <div class="watches">
-<div class="watch-card"><img src="/images/apple_watch_1.png" alt="Apple Watch face with tide bars complication"><span>Bars complication</span></div>
-<div class="watch-card"><img src="/images/apple_watch_2.png" alt="Apple Watch face with tide curve, swell and energy"><span>Curve + swell</span></div>
+<div class="watch-card"><Image src={watch1} alt="Apple Watch face with tide bars complication" width={512} densities={[1]} loading="lazy" decoding="async" /><span>Bars complication</span></div>
+<div class="watch-card"><Image src={watch2} alt="Apple Watch face with tide curve, swell and energy" width={512} densities={[1]} loading="lazy" decoding="async" /><span>Curve + swell</span></div>
 </div>
 </div>
 </section>

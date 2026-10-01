@@ -6,16 +6,75 @@ import Features from '../components/Features.astro';
 import FeatureRows from '../components/FeatureRows.astro';
 import Widgets from '../components/Widgets.astro';
 import Watch from '../components/Watch.astro';
+import Faq, { faq } from '../components/Faq.astro';
+import SpotsTeaser from '../components/SpotsTeaser.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Footer from '../components/Footer.astro';
+import { SURF_SPOT_COUNT, BEACH_COUNT } from '../data/spots';
+
+const SITE = 'https://balitideforecast.app';
+const APP_STORE = 'https://apps.apple.com/id/app/bali-tide-forecast/id1525663618';
+const GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.balitideforecast';
+
+const appSchema = {
+  '@type': 'MobileApplication',
+  '@id': `${SITE}/#app`,
+  name: 'Bali Tide Forecast',
+  alternateName: 'Bali Tide Forecast — Surf & Tide Times for Bali',
+  applicationCategory: 'WeatherApplication',
+  operatingSystem: 'iOS, Android, watchOS',
+  url: SITE,
+  installUrl: APP_STORE,
+  sameAs: [APP_STORE, GOOGLE_PLAY],
+  description: `Tide, swell, wind and surf spot conditions for Bali, covering ${SURF_SPOT_COUNT} surf spots and ${BEACH_COUNT} beaches. An interactive tide chart with current level, tide speed and upcoming high and low tides, plus wave and wind forecasts, a spot map, Home Screen and Lock Screen widgets, and an Apple Watch app. Forecasts update every 3 hours, 5 days ahead free and 16 days with Pro.`,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+  },
+  // From the App Store listing for Bali Tide Forecast (not the Surfcast app).
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    ratingCount: '37',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  featureList: [
+    'Interactive tide chart with current level, tide speed, and upcoming high and low tides',
+    'Recommended tide window per surf spot, with wave height, period, energy and wind',
+    'Surfing and Beach profiles for different kinds of ocean days',
+    'Shareable tide and wave forecast images',
+    'Wave and wind forecasts as charts, bars and timetables',
+    'Moon phases, moonrise, moonset, sunrise and sunset',
+    `Map of ${SURF_SPOT_COUNT} surf spots and ${BEACH_COUNT} beaches across Bali`,
+    'Home Screen and Lock Screen widgets',
+    'Apple Watch app with complications',
+    'Metres or feet, with selectable themes',
+  ],
+  publisher: { '@id': `${SITE}/#organization` },
+};
+
+const faqSchema = {
+  '@type': 'FAQPage',
+  '@id': `${SITE}/#faq`,
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
 ---
-<Base>
+<Base schema={[appSchema, faqSchema]}>
   <Nav />
   <Hero />
   <Features />
   <FeatureRows />
+  <SpotsTeaser />
   <Widgets />
   <Watch />
+  <Faq />
   <CallToAction />
   <Footer />
 </Base>

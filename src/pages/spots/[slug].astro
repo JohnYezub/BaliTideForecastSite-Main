@@ -1,0 +1,132 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { spots, typeLabel, seasonLabel, levelLabel, areaPhrase, areaLabel, seasonSentence, type Spot } from '../../data/spots';
+
+export function getStaticPaths() {
+  return spots.map((spot) => ({ params: { slug: spot.slug }, props: { spot } }));
+}
+
+interface Props {
+  spot: Spot;
+}
+
+const { spot } = Astro.props;
+const SITE = 'https://balitideforecast.app';
+
+const kind = spot.isSurfSpot && spot.isBeach
+  ? 'surf spot and beach'
+  : spot.isSurfSpot
+    ? 'surf spot'
+    : 'beach';
+
+const nearby = spots.filter((s) => s.area === spot.area && s.slug !== spot.slug).slice(0, 8);
+
+const heading = spot.isSurfSpot ? `${spot.name} surf spot` : spot.name;
+const title = `${spot.name} — tide, surf and wind conditions | Bali Tide Forecast`;
+const description = spot.isSurfSpot
+  ? `${spot.name} is a ${typeLabel(spot.type).toLowerCase()} ${areaPhrase(spot.area)}. Break type, skill level, best season, wave size and offshore wind direction, plus live tide times in the app.`
+  : `${spot.name} ${areaPhrase(spot.area)}. Tide times, wind direction and conditions, with a live tide chart in the Bali Tide Forecast app.`;
+
+const facts: [string, string | undefined][] = [
+  ['Area', areaLabel(spot.area)],
+  ['Type', typeLabel(spot.type)],
+  ['Skill level', levelLabel(spot.level)],
+  ['Best season', seasonLabel(spot.season)],
+  ['Typical wave size', spot.waveRange ? `${spot.waveRange.min}–${spot.waveRange.max} m` : undefined],
+  ['Offshore wind', spot.offshore && !spot.windConflict ? `from ${spot.offshore}` : undefined],
+  ['Onshore wind', spot.onshore && !spot.windConflict ? `from ${spot.onshore}` : undefined],
+  ['Coordinates', `${spot.latitude.toFixed(5)}, ${spot.longitude.toFixed(5)}`],
+];
+
+const schema = [
+  {
+    '@type': spot.isSurfSpot ? 'LandmarksOrHistoricalBuildings' : 'Beach',
+    '@id': `${SITE}/spots/${spot.slug}/#place`,
+    name: spot.name,
+    description,
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: 'Bali',
+      addressCountry: 'ID',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: spot.latitude,
+      longitude: spot.longitude,
+    },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Surf spots', item: `${SITE}/spots/` },
+      { '@type': 'ListItem', position: 3, name: spot.name, item: `${SITE}/spots/${spot.slug}/` },
+    ],
+  },
+];
+---
+<Base title={title} description={description} schema={schema}>
+<Nav />
+
+<section class="legal-hero">
+  <div class="wrap in">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span aria-hidden="true">›</span>
+      <a href="/spots/">Surf spots</a> <span aria-hidden="true">›</span>
+      <span>{spot.name}</span>
+    </nav>
+    <h1 class="h1">{heading}</h1>
+    <p class="legal-meta">{spot.area} · Bali, Indonesia</p>
+  </div>
+</section>
+
+<section class="legal">
+  <div class="wrap spot-grid">
+    <div class="prose">
+      <p>
+        {spot.name} is a {kind} {areaPhrase(spot.area)}{levelLabel(spot.level) ? `, rated ${levelLabel(spot.level)!.toLowerCase()}` : ''}.
+        {spot.waveRange ? ` Waves here typically run between ${spot.waveRange.min} and ${spot.waveRange.max} metres.` : ''}
+        {seasonSentence(spot.season)}
+      </p>
+      {spot.offshore && !spot.windConflict && (
+        <p>
+          The wind is offshore when it blows from {spot.offshore} and onshore from {spot.onshore}, so
+          mornings are usually the cleaner window before the sea breeze fills in.
+        </p>
+      )}
+
+      <h2>Conditions at a glance</h2>
+      <table class="facts">
+        <tbody>
+          {facts.filter(([, v]) => v).map(([k, v]) => (
+            <tr><th scope="row">{k}</th><td>{v}</td></tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Tide times for {spot.name}</h2>
+      <p>
+        Tide drives whether this spot works. The Bali Tide Forecast app shows the live tide chart for
+        {' '}{spot.name} — the water level right now, how fast the tide is moving, the next high and low
+        tide with exact times, and the recommended tide window for this spot alongside wave height,
+        period, energy and wind.
+      </p>
+      <p>Forecasts refresh every 3 hours. Five days ahead are free; Pro extends it to 16 days.</p>
+      <StoreButtons theme="on-light" />
+    </div>
+
+    <aside class="spot-side">
+      <h2 class="h3">Other spots in {spot.area}</h2>
+      <ul class="spot-list">
+        {nearby.map((s) => <li><a href={`/spots/${s.slug}/`}>{s.name}</a></li>)}
+      </ul>
+      <p><a href="/spots/">All Bali surf spots →</a></p>
+    </aside>
+  </div>
+</section>
+
+<Footer />
+</Base>

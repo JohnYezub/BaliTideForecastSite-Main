@@ -1,6 +1,7 @@
 ---
 import Phone from './Phone.astro';
 import StoreButtons from './StoreButtons.astro';
+import mainscreen from '../images/mainscreen.png';
 ---
 <section class="hero dark" id="top">
 <div class="wrap hero-grid">
@@ -12,7 +13,7 @@ import StoreButtons from './StoreButtons.astro';
 <div class="meta"><span>Free download</span><span>iOS · Android · Apple Watch</span><span>Metres or feet</span></div>
 </div>
 <div class="hero-phone">
-<Phone src="/images/mainscreen.png" alt="Bali Tide Forecast main screen with tide chart" width="clamp(250px,30vw,380px)" />
+<Phone src={mainscreen} alt="Bali Tide Forecast main screen with tide chart" width="clamp(250px,30vw,380px)" eager />
 </div>
 </div>
 <svg class="tide-line" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 78 C 180 18 300 18 480 78 C 660 138 780 138 960 78 C 1140 18 1260 18 1440 78 L1440 120 L0 120 Z" fill="rgba(72,198,240,.10)"></path><path d="M0 78 C 180 18 300 18 480 78 C 660 138 780 138 960 78 C 1140 18 1260 18 1440 78" fill="none" stroke="rgba(72,198,240,.45)" stroke-width="2"></path></svg>

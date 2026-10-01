@@ -1,7 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import appIcon from '../images/app_icon.png';
+---
 <header class="nav">
 <div class="wrap nav-in">
-<a class="brand" href="/"><img src="/images/app_icon.png" alt="Bali Tide Forecast">Bali Tide Forecast</a>
-<nav class="nav-links"><a href="/#features">Features</a><a href="/#widgets">Widgets</a><a href="/#watch">Apple Watch</a><a href="/#download">Download</a></nav>
+<a class="brand" href="/"><Image src={appIcon} alt="Bali Tide Forecast" width={32} densities={[1, 2]} loading="eager" decoding="async" />Bali Tide Forecast</a>
+<nav class="nav-links"><a href="/spots/">Spots</a><a href="/#features">Features</a><a href="/#widgets">Widgets</a><a href="/#watch">Apple Watch</a><a href="/#download">Download</a></nav>
 <a class="btn btn-sm" href="https://apps.apple.com/id/app/bali-tide-forecast/id1525663618">Get the app</a>
 </div>
 </header>

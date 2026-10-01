@@ -1,0 +1,54 @@
+---
+import { SURF_SPOT_COUNT, BEACH_COUNT, areaNames } from '../data/spots';
+
+export const faq = [
+  {
+    q: 'Which Bali surf spots does the app cover?',
+    a: `Bali Tide Forecast covers ${SURF_SPOT_COUNT} surf spots and ${BEACH_COUNT} beaches, grouped into ${areaNames()}. That includes Uluwatu, Padang Padang, Bingin, Impossibles, Balangan, Canggu, Batu Bolong, Echo Beach, Keramas, Medewi, Shipwrecks and Lacerations.`,
+  },
+  {
+    q: 'How often is the forecast updated?',
+    a: 'Forecasts refresh every 3 hours.',
+  },
+  {
+    q: 'How far ahead does the forecast go?',
+    a: 'Five days ahead are available free. Pro extends the forecast to 16 days.',
+  },
+  {
+    q: 'Is Bali Tide Forecast free?',
+    a: 'Yes — the app is free to download and use, with in-app purchases. A Pro subscription is available monthly or yearly; current features and prices are shown in the app before you buy.',
+  },
+  {
+    q: 'What does the app show besides tide times?',
+    a: 'Wave height, period and energy, wind speed and direction, a recommended tide window for each surf spot, moon phases, moonrise and moonset, and sunrise and sunset. There are Home Screen and Lock Screen widgets, plus an Apple Watch app with complications.',
+  },
+  {
+    q: 'Does it work on Android and Apple Watch?',
+    a: 'Yes. Bali Tide Forecast is available for iPhone and Android, and includes an Apple Watch app with today’s tide graph, current water level, next tide, wave height, period, energy and wind.',
+  },
+  {
+    q: 'Can I switch between metres and feet?',
+    a: 'Yes. Units can be set to metres or feet, along with the theme and your preferred tide range.',
+  },
+  {
+    q: 'What is a recommended tide window?',
+    a: 'Each surf spot works best within a particular range of water levels. The app compares the live tide against that range for the spot you picked, so you can see at a glance whether now is a good time to paddle out.',
+  },
+];
+---
+<section class="sec" id="faq">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">FAQ</p>
+<h2 class="h2">Questions, answered.</h2>
+</div>
+<div class="faq-list">
+{faq.map((item) => (
+  <details class="faq-item">
+    <summary><span>{item.q}</span></summary>
+    <p class="body">{item.a}</p>
+  </details>
+))}
+</div>
+</div>
+</section>

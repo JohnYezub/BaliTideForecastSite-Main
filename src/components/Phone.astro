@@ -1,13 +1,32 @@
 ---
+import { Image } from 'astro:assets';
+import bezel from '../images/iPhone-17-Pro-Cosmic-orange.svg';
+
 interface Props {
-  src: string;
+  src: ImageMetadata;
   alt: string;
   width: string;
+  /** Set on the hero phone: it is the LCP element and must not be lazy-loaded. */
+  eager?: boolean;
 }
 
-const { src, alt, width } = Astro.props;
+const { src, alt, width, eager = false } = Astro.props;
+
+// The screen sits at 91.364% of the frame, which tops out at 380px CSS px.
+// 760px covers that at 2x DPR.
+const SCREEN_W = 760;
+const loading = eager ? 'eager' : 'lazy';
 ---
 <div class="phone" style={`--pw:${width}`}>
-<img class="screen" src={src} alt={alt}>
-<img class="bezel" src="/images/iPhone-17-Pro-Cosmic-orange.svg" alt="">
+<Image
+  class="screen"
+  src={src}
+  alt={alt}
+  width={SCREEN_W}
+  densities={[1]}
+  loading={loading}
+  fetchpriority={eager ? 'high' : 'auto'}
+  decoding="async"
+/>
+<img class="bezel" src={bezel.src} alt="" width={bezel.width} height={bezel.height} loading={loading} decoding="async" />
 </div>

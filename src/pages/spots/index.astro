@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { areas, spots, areaNames, typeLabel, levelLabel } from '../../data/spots';
+
+const SITE = 'https://balitideforecast.app';
+const title = `All ${spots.length} Bali surf spots and beaches | Bali Tide Forecast`;
+const description = `Every surf spot and beach covered by Bali Tide Forecast — ${spots.length} places across ${areas.length} areas, from Uluwatu and Padang Padang to Keramas, Canggu and Nusa Lembongan. Break type, skill level, season and wind for each.`;
+
+const schema = [
+  {
+    '@type': 'CollectionPage',
+    '@id': `${SITE}/spots/#page`,
+    name: 'Bali surf spots and beaches',
+    description,
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Surf spots', item: `${SITE}/spots/` },
+    ],
+  },
+];
+---
+<Base title={title} description={description} schema={schema}>
+<Nav />
+
+<section class="legal-hero">
+  <div class="wrap in">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span aria-hidden="true">›</span> <span>Surf spots</span>
+    </nav>
+    <h1 class="h1">Bali surf spots &amp; beaches</h1>
+    <p class="lead on-dark">
+      {spots.length} places across {areas.length} areas — {areaNames()} — with break type, skill
+      level, best season and wind direction for each, and live tide times in the app.
+    </p>
+  </div>
+</section>
+
+<section class="legal">
+  <div class="wrap">
+    {areas.map((area) => (
+      <div class="area-block">
+        <h2 class="h2">{area.name}</h2>
+        <div class="spot-cards">
+          {area.spots.map((s) => (
+            <a class="spot-card" href={`/spots/${s.slug}/`}>
+              <span class="spot-card-name">{s.name}</span>
+              <span class="spot-card-meta">
+                {typeLabel(s.type)}{levelLabel(s.level) ? ` · ${levelLabel(s.level)}` : ''}
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+    <div class="spots-cta">
+      <h2 class="h2">Live tide times for every spot</h2>
+      <p class="lead">
+        Pick any spot in the app for its live tide chart, recommended tide window, wave height, period,
+        energy and wind. Updated every 3 hours, free for 5 days ahead.
+      </p>
+      <StoreButtons theme="on-light" />
+    </div>
+  </div>
+</section>
+
+<Footer />
+</Base>

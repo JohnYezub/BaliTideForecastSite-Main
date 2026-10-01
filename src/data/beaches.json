@@ -1,0 +1,733 @@
+{
+  "areas": [
+    {
+      "name": "Kuta & Seminyak",
+      "spots": [
+        {
+          "name": "Kuta Beach",
+          "isPremium": false,
+          "type": "beach",
+          "latitude": -8.71844,
+          "longitude": 115.16862,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Legian Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.705,
+          "longitude": 115.168,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Seminyak Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6909,
+          "longitude": 115.156,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Double Six Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6975,
+          "longitude": 115.1614,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Petitenget Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6818,
+          "longitude": 115.1523,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Jimbaran Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.7906,
+          "longitude": 115.162,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 315
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 0,
+              "end": 135
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bukit Peninsula",
+      "spots": [
+        {
+          "name": "Pandawa Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8479,
+          "longitude": 115.0884,
+          "onshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 90
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 285,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 75
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Melasti Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8478,
+          "longitude": 115.1157,
+          "onshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 90
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 285,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 75
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Padang Padang Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8109,
+          "longitude": 115.1027,
+          "onshoreWindRanges": [
+            {
+              "start": 225,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 180
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Bingin Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8065,
+          "longitude": 115.1088,
+          "onshoreWindRanges": [
+            {
+              "start": 225,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 180
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Uluwatu Beach",
+          "isPremium": false,
+          "type": "beach",
+          "latitude": -8.8148,
+          "longitude": 115.0876,
+          "onshoreWindRanges": [
+            {
+              "start": 225,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 180
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Dreamland Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.7969,
+          "longitude": 115.1146,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 164
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Balangan Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.7925,
+          "longitude": 115.1206,
+          "onshoreWindRanges": [
+            {
+              "start": 180,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 45,
+              "end": 165
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Nyang Nyang Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8407,
+          "longitude": 115.1077,
+          "onshoreWindRanges": [
+            {
+              "start": 225,
+              "end": 345
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 180
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Green Bowl Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8489,
+          "longitude": 115.1329,
+          "onshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 90
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 285,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 75
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Canggu",
+      "spots": [
+        {
+          "name": "Batu Bolong Beach",
+          "isPremium": false,
+          "type": "beach",
+          "latitude": -8.6572,
+          "longitude": 115.1289,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 285
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 345,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Echo Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6533,
+          "longitude": 115.1258,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 285
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 345,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Berawa Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6686,
+          "longitude": 115.1385,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 285
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 345,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Nelayan Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.662,
+          "longitude": 115.133,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 285
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 345,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Pererenan Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.6469,
+          "longitude": 115.121,
+          "onshoreWindRanges": [
+            {
+              "start": 165,
+              "end": 285
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 345,
+              "end": 360
+            },
+            {
+              "start": 0,
+              "end": 105
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sanur & Nusa Dua",
+      "spots": [
+        {
+          "name": "Sanur Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.687,
+          "longitude": 115.2626,
+          "onshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 165
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 195,
+              "end": 345
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Nusa Dua Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.801,
+          "longitude": 115.232,
+          "onshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 165
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 195,
+              "end": 345
+            }
+          ],
+          "perfectTideRange": {
+            "min": 1.0,
+            "max": 1.5
+          }
+        },
+        {
+          "name": "Geger Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.8018,
+          "longitude": 115.2265,
+          "onshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 165
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 195,
+              "end": 345
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Tanjung Benoa Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.7645,
+          "longitude": 115.2213,
+          "onshoreWindRanges": [
+            {
+              "start": 15,
+              "end": 165
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 195,
+              "end": 345
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "East Bali",
+      "spots": [
+        {
+          "name": "Virgin Beach (White Sand)",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.4863,
+          "longitude": 115.5847,
+          "onshoreWindRanges": [
+            {
+              "start": 90,
+              "end": 180
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 360
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Blue Lagoon (Padangbai)",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.535,
+          "longitude": 115.514,
+          "onshoreWindRanges": [
+            {
+              "start": 90,
+              "end": 180
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 360
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Bias Tugel Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.534,
+          "longitude": 115.509,
+          "onshoreWindRanges": [
+            {
+              "start": 90,
+              "end": 180
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 360
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        {
+          "name": "Amed Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.3395,
+          "longitude": 115.6875,
+          "onshoreWindRanges": [
+            {
+              "start": 90,
+              "end": 180
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 270,
+              "end": 360
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "North Bali",
+      "spots": [
+        {
+          "name": "Lovina Beach",
+          "isPremium": true,
+          "type": "beach",
+          "latitude": -8.158,
+          "longitude": 115.026,
+          "onshoreWindRanges": [
+            {
+              "start": 315,
+              "end": 45
+            }
+          ],
+          "offshoreWindRanges": [
+            {
+              "start": 135,
+              "end": 225
+            }
+          ],
+          "perfectTideRange": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+---
+import { spots, areas, areaNames, SURF_SPOT_COUNT, BEACH_COUNT } from '../data/spots';
+
+// Recognisable names first — these are the ones people actually search for.
+const FEATURED = [
+  'uluwatu', 'padang-padang', 'bingin', 'impossibles', 'balangan', 'dreamland',
+  'canggu', 'batu-bolong', 'echo', 'keramas', 'medewi', 'shipwrecks',
+];
+const featured = FEATURED.map((slug) => spots.find((s) => s.slug === slug)).filter(Boolean);
+---
+<section class="sec" id="spots">
+<div class="wrap">
+<div class="sec-head">
+<p class="eyebrow">Spots</p>
+<h2 class="h2">{SURF_SPOT_COUNT} surf spots. {BEACH_COUNT} beaches. One forecast.</h2>
+<p class="lead">
+  Bali Tide Forecast covers {spots.length} places across {areas.length} areas — {areaNames()}.
+  Each one has its own break type, skill level, season and wind direction, and its own tide
+  window in the app.
+</p>
+</div>
+<div class="spot-chips">
+{featured.map((s) => <a class="chip" href={`/spots/${s!.slug}/`}>{s!.name}</a>)}
+<a class="chip chip-all" href="/spots/">All {spots.length} spots →</a>
+</div>
+</div>
+</section>
