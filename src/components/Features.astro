@@ -37,7 +37,7 @@ const UNDERLINE = 'M1 6 C 16 0, 28 0, 40 6 S 64 12, 80 6 S 104 0, 119 6';
 </div>
 <div class="cards bt-cards">
 {features.map((f, i) => (
-<article class="card bt-fill" style={`--d:${i * 100}ms`}><p class="num"><span class="bt-count" data-pad style={`--to:${Number(f.num)};--d:${i * 100 + 250}ms`}>{f.num}</span></p><h3 class="h3">{f.title}</h3><svg class="bt-underline" viewBox="0 0 120 12" width="120" height="12" aria-hidden="true" focusable="false"><path class="bt-draw" pathLength="1" d={UNDERLINE} style={`--d:${i * 100 + 450}ms;--dur:.9s`}></path></svg><p class="body">{f.body}</p></article>
+<article class="card"><p class="num">{f.num}</p><h3 class="h3">{f.title}</h3><svg class="bt-underline" viewBox="0 0 120 12" width="120" height="12" aria-hidden="true" focusable="false"><path class="bt-draw" pathLength="1" d={UNDERLINE} style={`--d:${i * 100 + 450}ms;--dur:.9s`}></path></svg><p class="body">{f.body}</p></article>
 ))}
 <svg class="bt-feat-curve bt-wide-only bt-wipe" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true" focusable="false" style="--d:.2s;--dur:2.2s"><path d={featCurve} vector-effect="non-scaling-stroke"></path></svg>
 </div>

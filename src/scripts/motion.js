@@ -6,7 +6,7 @@
   const io = 'IntersectionObserver' in window
     ? new IntersectionObserver((es) => es.forEach((e) => {
         if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      }), { threshold: 0.2, rootMargin: '0px 0px -8% 0px' })
+      }), { threshold: 0, rootMargin: '0px 0px -40px 0px' })
     : null;
 
   function setNow(date = new Date()) {
@@ -23,6 +23,7 @@
 
   function init(root = document) {
     setNow();
+    if (io && !matchMedia('(prefers-reduced-motion: reduce)').matches) de.classList.add('motion');
     const els = root.querySelectorAll('.bt-reveal:not(.in)');
     if (io && de.classList.contains('motion')) els.forEach((el) => io.observe(el));
     else els.forEach((el) => el.classList.add('in'));

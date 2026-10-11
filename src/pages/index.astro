@@ -10,6 +10,8 @@ import Faq, { faq } from '../components/Faq.astro';
 import SpotsTeaser from '../components/SpotsTeaser.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Footer from '../components/Footer.astro';
+import OceanDivider from '../components/OceanDivider.astro';
+import '../styles/ocean.css';
 import { SURF_SPOT_COUNT, BEACH_COUNT } from '../data/spots';
 
 const SITE = 'https://balitideforecast.app';
@@ -67,14 +69,19 @@ const faqSchema = {
 };
 ---
 <Base schema={[appSchema, faqSchema]}>
+<div class="ocean-site">
   <Nav />
   <Hero />
   <Features />
+  <OceanDivider />
   <FeatureRows />
   <SpotsTeaser />
   <Widgets />
+  <OceanDivider reverse />
   <Watch />
   <Faq />
+  <OceanDivider />
   <CallToAction />
   <Footer />
+</div>
 </Base>

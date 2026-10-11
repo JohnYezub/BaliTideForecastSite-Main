@@ -1,0 +1,11 @@
+---
+interface Props { reverse?: boolean; }
+const { reverse = false } = Astro.props;
+---
+<div class:list={['ocean-divider', reverse && 'ocean-divider-reverse']} aria-hidden="true">
+  <svg viewBox="0 0 1440 160" preserveAspectRatio="none" focusable="false">
+    <path class="ocean-wave-back" d="M-100 90 C160 0 290 150 560 70 S980 0 1240 75 S1500 140 1640 50 L1640 180 L-100 180Z" />
+    <path class="ocean-wave-front" d="M-100 110 C170 155 330 20 600 90 S990 155 1230 80 S1480 30 1640 100 L1640 180 L-100 180Z" />
+    <path class="ocean-wave-line" d="M-100 90 C160 0 290 150 560 70 S980 0 1240 75 S1500 140 1640 50" />
+  </svg>
+</div>

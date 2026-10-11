@@ -2,6 +2,8 @@
 import Phone from './Phone.astro';
 import StoreButtons from './StoreButtons.astro';
 import mainscreen from '../images/mainscreen.png';
+import { Image } from 'astro:assets';
+import heroWatch from '../images/apple-watch-hero-transparent.png';
 import { samples, smoothPath, waterPath, distFractions } from '../lib/tide-geometry';
 
 // Decorative 24 h tide curve (illustration, not data). Widgets reuse the same
@@ -13,7 +15,7 @@ const dist = distFractions(pts);
 const defaultNow = `${(dist[30] * 100).toFixed(2)}%`; // 15:00 when JS is off
 ---
 <section class="hero dark bt-clip" id="top">
-<div class="bt-hero-bg bt-par-slow" aria-hidden="true">
+<div class="bt-hero-bg" aria-hidden="true">
 <svg viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
 <defs><linearGradient id="bt-water-hero" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="bt-stop" style="stop-opacity:.2"></stop><stop offset="1" class="bt-stop" style="stop-opacity:0"></stop></linearGradient></defs>
 <g class="bt-breathe" style="--d:1.5s"><path class="bt-rise" d={water} fill="url(#bt-water-hero)" style="--dur:1.4s;--d:.1s"></path></g>
@@ -32,7 +34,10 @@ const defaultNow = `${(dist[30] * 100).toFixed(2)}%`; // 15:00 when JS is off
 <div class="meta"><span>Free download</span><span>iOS · Android · Apple Watch</span><span>Metres or feet</span></div>
 </div>
 <div class="hero-phone bt-par-fast">
-<Phone src={mainscreen} alt="Bali Tide Forecast main screen with tide chart" width="clamp(250px,30vw,380px)" eager class="bt-surface" />
+<Phone src={mainscreen} alt="Bali Tide Forecast main screen with tide chart" width="var(--hero-phone-width, clamp(250px,27vw,350px))" eager class="bt-surface" />
+<div class="hero-watch bt-surface" style="--d:.65s">
+<Image src={heroWatch} alt="Apple Watch with the Bali Tide Forecast tide chart, swell and wave energy" width={480} densities={[1]} loading="eager" decoding="async" />
+</div>
 </div>
 </div>
 <svg class="tide-line" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 78 C 180 18 300 18 480 78 C 660 138 780 138 960 78 C 1140 18 1260 18 1440 78 L1440 120 L0 120 Z" fill="rgba(72,198,240,.10)"></path><path d="M0 78 C 180 18 300 18 480 78 C 660 138 780 138 960 78 C 1140 18 1260 18 1440 78" fill="none" stroke="rgba(72,198,240,.45)" stroke-width="2"></path></svg>

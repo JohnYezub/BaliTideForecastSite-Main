@@ -1,6 +1,6 @@
 /* Bali Tide Forecast — motion layer.
    Global stylesheet: import once in the base layout (e.g. `import '../styles/motion.css'`).
-   Everything is opt-in via `html.motion` (set by an inline <head> script) and
+   Everything is opt-in via `html.motion` (set when motion.js initializes) and
    `prefers-reduced-motion: no-preference`. Without either, the page is the final static state.
    Colours are NOT defined here — components pass them via existing tokens. */
 
@@ -92,7 +92,7 @@
 }
 @keyframes bt-glide { from { offset-distance: 0%; opacity: 0; } 12% { opacity: 1; } to { offset-distance: var(--bt-now, 62%); opacity: 1; } }
 @keyframes bt-rise { from { transform: scaleY(0); } to { transform: none; } }
-@keyframes bt-surface { from { opacity: 0; transform: translateY(140px); } to { opacity: 1; transform: none; } }
+@keyframes bt-surface { from { opacity: .85; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 @keyframes bt-cascade { from { opacity: 0; transform: translateY(16px) rotate(-3deg); } 60% { opacity: 1; transform: translateY(-3px) rotate(.5deg); } to { opacity: 1; transform: none; } }
 @keyframes bt-count { from { --bt-n: 0; } to { --bt-n: var(--to, 0); } }
 @keyframes bt-breathe { from { translate: 0 6px; } to { translate: 0 -6px; } }

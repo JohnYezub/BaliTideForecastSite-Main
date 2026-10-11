@@ -14,6 +14,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;font-family:var(--font);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;text-wrap:pretty}
 img{display:block;max-width:100%}
 a{color:var(--ocean);text-decoration:none}
@@ -108,7 +109,7 @@ section{position:relative}
 .watch-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,72px);align-items:center}
 .watches{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,26px)}
 .watch-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(14px,2vw,26px);display:grid;gap:14px;justify-items:center}
-.watch-card img{width:100%;border-radius:var(--r-md);mix-blend-mode:multiply}
+.watch-card img{width:100%;height:auto;border-radius:var(--r-md);mix-blend-mode:multiply}
 .watch-card span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 @media(max-width:900px){.watch-grid{grid-template-columns:1fr}}
 
