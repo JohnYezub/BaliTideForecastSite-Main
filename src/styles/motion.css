@@ -1,0 +1,105 @@
+/* Bali Tide Forecast — motion layer.
+   Global stylesheet: import once in the base layout (e.g. `import '../styles/motion.css'`).
+   Everything is opt-in via `html.motion` (set by an inline <head> script) and
+   `prefers-reduced-motion: no-preference`. Without either, the page is the final static state.
+   Colours are NOT defined here — components pass them via existing tokens. */
+
+/* ---------- static (always on) ---------- */
+.bt-marker { offset-rotate: 0deg; }
+.bt-grow, .bt-swing, .bt-pop, .bt-fade { transform-box: fill-box; }
+.bt-grow { transform-origin: 50% 100%; }
+.bt-swing, .bt-pop, .bt-fade { transform-origin: 50% 50%; }
+.bt-rise { transform-box: fill-box; transform-origin: 50% 100%; }
+.bt-chip { position: relative; }
+.bt-chip::after {
+  content: ""; position: absolute; left: 16px; right: 16px; bottom: 8px; height: 1.5px;
+  background: currentColor; opacity: .6; transform: scaleX(0); transform-origin: 0 50%;
+}
+@media (hover: hover) {
+  .bt-chip:hover::after { transform: scaleX(1); }
+}
+.bt-chip:focus-visible::after { transform: scaleX(1); }
+@media (max-width: 719px) { .bt-wide-only { display: none; } }
+
+/* Count-up without touching DOM text (SEO-safe): the real number stays in HTML,
+   a CSS counter paints over it while --bt-n animates. */
+@property --bt-n { syntax: '<integer>'; inherits: false; initial-value: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* ---------- one-shot primitives ---------- */
+  .motion .bt-draw { stroke-dasharray: 1 1; animation: bt-draw var(--dur, 1.6s) var(--d, 0s) cubic-bezier(.45,0,.2,1) both; }
+  .motion .bt-wipe { animation: bt-wipe var(--dur, 2s) var(--d, 0s) cubic-bezier(.45,0,.2,1) both; }
+  .motion .bt-fill { animation: bt-fill var(--dur, .9s) var(--d, 0s) cubic-bezier(.3,.7,.2,1) both; }
+  .motion .bt-grow { animation: bt-grow var(--dur, .7s) var(--d, 0s) cubic-bezier(.2,.8,.25,1.12) both; }
+  .motion .bt-swing { animation: bt-swing var(--dur, 1.3s) var(--d, 0s) cubic-bezier(.3,1.35,.4,1) both; }
+  .motion .bt-pop { animation: bt-pop var(--dur, .45s) var(--d, 0s) cubic-bezier(.3,1.6,.5,1) both; }
+  .motion .bt-fade { animation: bt-fade var(--dur, 1s) var(--d, 0s) cubic-bezier(.3,.7,.2,1) both; }
+  .motion .bt-float { animation: bt-float var(--dur, 1.2s) var(--d, 0s) cubic-bezier(.2,.75,.25,1.04) both; }
+  .motion .bt-steps { animation: bt-steps var(--dur, 1.4s) var(--d, 0s) both; }
+  .motion .bt-glide { animation: bt-glide var(--dur, 1.4s) var(--d, 0s) cubic-bezier(.3,.6,.2,1) both; }
+  .motion .bt-rise { animation: bt-rise var(--dur, 1.4s) var(--d, 0s) cubic-bezier(.2,.7,.2,1) both; }
+  .motion .bt-surface { animation: bt-surface var(--dur, 1.1s) var(--d, .5s) cubic-bezier(.2,.7,.2,1) both; }
+  .motion .bt-cascade { animation: bt-cascade var(--dur, .7s) var(--d, 0s) cubic-bezier(.3,.8,.3,1) both; }
+  .motion .bt-count {
+    position: relative; display: inline-block; -webkit-text-fill-color: transparent;
+    counter-reset: bt var(--bt-n);
+    animation: bt-count var(--dur, 1.4s) var(--d, 0s) cubic-bezier(.33,1,.68,1) both;
+  }
+  .motion .bt-count::after {
+    content: counter(bt); content: counter(bt) / "";
+    position: absolute; inset: 0; text-align: right; -webkit-text-fill-color: currentColor;
+  }
+  .motion .bt-count[data-pad]::after { content: counter(bt, decimal-leading-zero); content: counter(bt, decimal-leading-zero) / ""; }
+
+  /* ---------- infinite: water line breathing (hero + closing CTA only) ---------- */
+  .motion .bt-breathe { animation: bt-breathe 11s var(--d, 1.6s) ease-in-out infinite alternate both; }
+
+  /* ---------- reveal gate: paused on the `from` frame until the container gets .in ---------- */
+  .motion .bt-reveal :is(.bt-draw,.bt-wipe,.bt-fill,.bt-grow,.bt-swing,.bt-pop,.bt-fade,.bt-float,.bt-steps,.bt-glide,.bt-rise,.bt-breathe,.bt-cascade,.bt-count) { animation-play-state: paused; }
+  .motion .bt-reveal.in :is(.bt-draw,.bt-wipe,.bt-fill,.bt-grow,.bt-swing,.bt-pop,.bt-fade,.bt-float,.bt-steps,.bt-glide,.bt-rise,.bt-breathe,.bt-cascade,.bt-count) { animation-play-state: running; }
+
+  /* chip hover lift (only hover motion besides buttons) */
+  .bt-chip { transition: translate .25s cubic-bezier(.3,.7,.2,1); }
+  .bt-chip::after { transition: transform .35s cubic-bezier(.3,.7,.2,1); }
+  @media (hover: hover) { .bt-chip:hover { translate: 0 -2px; } }
+  .bt-chip:focus-visible { translate: 0 -2px; }
+
+  /* ---------- scroll-driven: progressive enhancement ---------- */
+  @supports (animation-timeline: scroll()) {
+    .motion .bt-par-slow { animation: bt-par-slow linear both; animation-timeline: scroll(root block); animation-range: 0 100vh; }
+    .motion .bt-par-fast { animation: bt-par-fast linear both; animation-timeline: scroll(root block); animation-range: 0 100vh; }
+  }
+  @supports (animation-timeline: view()) {
+    .motion .bt-settle { animation: bt-settle linear both; animation-timeline: view(); animation-range: entry 0% cover 42%; }
+    .motion .bt-drift { animation: bt-drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+  }
+}
+
+@keyframes bt-draw { from { stroke-dashoffset: 1; opacity: 0; } 8% { opacity: 1; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes bt-wipe { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes bt-fill { from { clip-path: inset(100% 0 0 0 round var(--bt-r, 20px)); } to { clip-path: inset(0 0 0 0 round var(--bt-r, 20px)); } }
+@keyframes bt-grow { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes bt-swing { from { rotate: var(--r0, 90deg); opacity: 0; } 25% { opacity: 1; } to { rotate: 0deg; opacity: 1; } }
+@keyframes bt-pop { from { transform: scale(0); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes bt-fade { from { transform: scale(.82); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes bt-float { from { transform: translateY(80px); opacity: 0; } 40% { opacity: 1; } to { transform: none; opacity: 1; } }
+@keyframes bt-steps {
+  0%   { clip-path: inset(0 0 100% 0); animation-timing-function: cubic-bezier(.3,.7,.2,1); }
+  33%  { clip-path: inset(0 0 66% 0);  animation-timing-function: cubic-bezier(.3,.7,.2,1); }
+  66%  { clip-path: inset(0 0 33% 0);  animation-timing-function: cubic-bezier(.3,.7,.2,1); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+@keyframes bt-glide { from { offset-distance: 0%; opacity: 0; } 12% { opacity: 1; } to { offset-distance: var(--bt-now, 62%); opacity: 1; } }
+@keyframes bt-rise { from { transform: scaleY(0); } to { transform: none; } }
+@keyframes bt-surface { from { opacity: 0; transform: translateY(140px); } to { opacity: 1; transform: none; } }
+@keyframes bt-cascade { from { opacity: 0; transform: translateY(16px) rotate(-3deg); } 60% { opacity: 1; transform: translateY(-3px) rotate(.5deg); } to { opacity: 1; transform: none; } }
+@keyframes bt-count { from { --bt-n: 0; } to { --bt-n: var(--to, 0); } }
+@keyframes bt-breathe { from { translate: 0 6px; } to { translate: 0 -6px; } }
+@keyframes bt-par-slow { to { translate: 0 160px; } }
+@keyframes bt-par-fast { to { translate: 0 -70px; } }
+@keyframes bt-settle {
+  from { opacity: .3; transform: perspective(1400px) translateY(90px) rotateX(16deg) rotateY(var(--ry, -9deg)) scale(.93); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes bt-drift { from { translate: 0 calc(var(--drift, 40px) / 2); } to { translate: 0 calc(var(--drift, 40px) / -2); } }
