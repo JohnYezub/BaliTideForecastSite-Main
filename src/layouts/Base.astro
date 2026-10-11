@@ -4,6 +4,7 @@ import { getImage } from 'astro:assets';
 import appIcon from '../images/app_icon.png';
 import ogSource from '../images/og-image.jpg';
 import '../styles/global.css';
+import '../styles/motion.css';
 
 interface Props {
   title?: string;
@@ -66,6 +67,10 @@ const graph = [
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<script is:inline>
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches)
+    document.documentElement.classList.add('motion');
+</script>
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
@@ -94,5 +99,6 @@ const graph = [
 <body>
 <slot />
 <Analytics />
+<script src="../scripts/motion.js"></script>
 </body>
 </html>

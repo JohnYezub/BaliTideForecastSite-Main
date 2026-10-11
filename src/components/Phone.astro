@@ -8,18 +8,24 @@ interface Props {
   width: string;
   /** Set on the hero phone: it is the LCP element and must not be lazy-loaded. */
   eager?: boolean;
+  /** Motion hooks (bt- classes, --d/--dur) for the frame and for the screen image. */
+  class?: string;
+  style?: string;
+  screenClass?: string;
+  screenStyle?: string;
 }
 
-const { src, alt, width, eager = false } = Astro.props;
+const { src, alt, width, eager = false, class: className, style, screenClass, screenStyle } = Astro.props;
 
 // The screen sits at 91.364% of the frame, which tops out at 380px CSS px.
 // 760px covers that at 2x DPR.
 const SCREEN_W = 760;
 const loading = eager ? 'eager' : 'lazy';
 ---
-<div class="phone" style={`--pw:${width}`}>
+<div class:list={['phone', className]} style={`--pw:${width}${style ? `;${style}` : ''}`}>
 <Image
-  class="screen"
+  class:list={['screen', screenClass]}
+  style={screenStyle}
   src={src}
   alt={alt}
   width={SCREEN_W}
