@@ -60,8 +60,9 @@ p{margin:0}
 
 /* ---- phone frame ---- */
 .phone{position:relative;width:var(--pw,320px);flex:none;filter:drop-shadow(0 34px 60px rgba(6,24,38,.42))}
-.phone::before{content:'';display:block;padding-top:208.18%}
-.phone .screen{position:absolute;left:4.318%;top:2.293%;width:91.364%;height:95.415%;object-fit:cover;border-radius:44px}
+.phone::before{content:'';display:block;padding-top:calc(100% * 1832 / 880)}
+/* Match the SVG frame's screen opening, including its continuous corners. */
+.phone .screen{position:absolute;left:calc(100% * 38 / 880);top:calc(100% * 42 / 1832);width:calc(100% * 804 / 880);height:calc(100% * 1748 / 1832);object-fit:cover;-webkit-mask:url('../images/phone-screen-mask.svg') center / 100% 100% no-repeat;mask:url('../images/phone-screen-mask.svg') center / 100% 100% no-repeat}
 .phone .bezel{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 
 /* ---- sections ---- */
