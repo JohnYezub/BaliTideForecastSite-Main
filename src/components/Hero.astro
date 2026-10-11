@@ -6,7 +6,7 @@ import { samples, smoothPath, waterPath, distFractions } from '../lib/tide-geome
 
 // Decorative 24 h tide curve (illustration, not data). Widgets reuse the same
 // path so --bt-now lands on the same time of day in both places.
-const pts = samples(1440, 330, 105);
+const pts = samples(1440, 372, 95);
 const curve = smoothPath(pts);
 const water = waterPath(pts, 1440, 560);
 const dist = distFractions(pts);
